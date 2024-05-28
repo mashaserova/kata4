@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const submit = document.querySelector('.submit-tel');
-    console.log(submit)
+    
     submit.addEventListener("click", function (event) {
         const tel = document.getElementById('usertel').value;
-        console.log(tel)
+        
         if (!tel) {
             alert("Поле должно быть заполнено");
             event.preventDefault(); // Предотвращаем отправку формы

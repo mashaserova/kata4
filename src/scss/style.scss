@@ -170,22 +170,26 @@ $pink: #FF3E79;
     display: none;
 }
 
-.about-us__anchor {
+.about-us__btn {
+    display: block;
     position: relative;
-    width: 100px;
+    width: 160px;
     padding-left: 24px;
+    background-color: $whiteSmoke;
+    color: black;
     height: 24px;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
 
     &::before {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    left: 0px;
-    background: url("../images/blue-arrows.svg") no-repeat;
+        display: inline-block;
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 0px;
+        background: url("../images/blue-arrows.svg") no-repeat;
     }
 }
 
@@ -257,6 +261,7 @@ $pink: #FF3E79;
     margin: auto 20px;
     background: url("../images/profile.svg") no-repeat;
     }
+    
 
     /* -------------------------------- */
 
@@ -295,11 +300,11 @@ $pink: #FF3E79;
     }
 
     .about-us__photo {
-    max-width: 320px;
-    height: 208px;
-    margin-top: 15px;
-    margin-left: auto;
-    border-radius: 5px;
+        max-width: 320px;
+        height: 208px;
+        margin-top: 15px;
+        margin-left: 15vw;
+        border-radius: 5px;
     }
 }
 
@@ -316,6 +321,18 @@ $pink: #FF3E79;
     .header-inner {
     display: none;
     }
+    .header-inner__text {
+        display: block;
+        position: relative;
+        width: 160px;
+        padding-left: 24px;
+        background-color: $whiteSmoke;
+        color: black;
+        height: 24px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
 
     /* ---------------------------------- */
 
@@ -325,38 +342,40 @@ $pink: #FF3E79;
     }
 
     .heading-box__tools {
-    padding-top: 10px;
-    margin-top: 10px;
-    margin-right: 80px;
-    position: relative;
-    display: flex;
-    max-width: 950px;
-    height: 52px;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
+        padding-top: 10px;
+        margin-top: 10px;
+        margin-right: 50px;
+        position: relative;
+        display: flex;
+        width: auto;
+        height: 52px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        background-color: $whiteSmoke;
 
-    &::after {
-        position: absolute;
-        content: " ";
-        width: 40px;
-        height: 40px;
-        background: url("../images/tools.svg") no-repeat;
-        top: 4px;
-        left: 130px;
-    }
+        &::after {
+            position: absolute;
+            content: " ";
+            width: 40px;
+            height: 40px;
+            background: url("../images/search.svg") no-repeat;
+            top: 4px;
+            left: 130px;
+        }
     }
 
     .heading-box__search {
-    padding-top: 10px;
-    margin-top: 10px;
-    position: relative;
-    display: flex;
-    width: auto;
-    height: 52px;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
+        padding-top: 10px;
+        margin-top: 10px;
+        position: relative;
+        display: flex;
+        width: auto;
+        height: 52px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        background-color: $whiteSmoke;
 
     &::after {
         position: absolute;
@@ -781,7 +800,7 @@ $pink: #FF3E79;
     height: 568px;
 }
 .prices .swiper-container {
-    height: 250px;
+    height: 350px;
 }
 .prices__title-box {
     margin: 32px 0px 16px -16px;
@@ -805,13 +824,13 @@ $pink: #FF3E79;
     font-size: 16px;
     font-weight: 400;
     align-items: start;
-    gap: 16px;
+    gap: 0px;
     border: 1px solid #eaeaea;
     border-radius: 6px;
     width: 240px;
     height: 200px;
     background-color: #fff;
-    padding: 16px;
+    padding: 0px;
 }
 
 .prices__footer {
@@ -869,7 +888,7 @@ $pink: #FF3E79;
     flex-direction: column;
     text-align: center;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     align-items: start;
     gap: 16px;
     border: 1px solid #eaeaea;
@@ -889,11 +908,31 @@ $pink: #FF3E79;
     left: 20vw;
     z-index: 1;
 }
+.commercial-btn {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    color: #1b1c21;
+    background-color: $whiteSmoke;
+}
+
+.commercial-btn::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 7px;
+    left: 305px; 
+    background-image:  url('../images/pink-dropdown.svg');
+    background-repeat: no-repeat;
+}
 @media (min-width: 769px) {
     .prices__swiper-container {
         display: flex;
         flex-direction: column;
         width: auto;
+        height: 400px;
     }
     .prices__swiper-container .prices__table-header {
         display: flex;
@@ -909,7 +948,7 @@ $pink: #FF3E79;
     .prices__swiper-container .swiper-slide {
         display: flex;
         flex-direction: row;
-        width: 95%;
+        width: 93%;
         height: 64px;
         text-align: start;
         border: none;
@@ -928,7 +967,7 @@ $pink: #FF3E79;
     .prices__table-header {
         display: table-header-group;
         text-align: left;
-        padding-left: 20px;
+        padding-left: 16px;
         margin-bottom: 10px;
         margin-top: 20px; 
     }
@@ -937,14 +976,12 @@ $pink: #FF3E79;
         bottom: 16px;
     }
 }
-
-@media (min-width: 600px) {
-    .prices__footer {
-        width: 420px; 
+@media (min-width: 1110px) {
+    .prices__swiper-container .swiper-slide {
+        width: 75%;
     }
     .prices__swiper-btn {
-        position: absolute;
-        left: 70vw;
+        left: 58vw;
         bottom: 16px;
     }
 }
@@ -960,7 +997,10 @@ $pink: #FF3E79;
 /* ---------------------320px--------------------- */
 
 .footer__info-item {
+    display: block;
+    margin: 0 auto;
     color: $grey;
+    background-color: $whiteSmoke;
     text-align: center;
     margin-bottom: 16px;
 }
@@ -1283,7 +1323,10 @@ $pink: #FF3E79;
     transition: 0.2s;
     }
 }
-
+.nav-list__item-anchor {
+    font-size: 16px;
+    background-color: white;
+}
 .nav-list__item-anchor:hover {
     color: $grey;
     transition: 0.2s;
