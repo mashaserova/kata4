@@ -13,43 +13,44 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     }
     btn.addEventListener('click', () => {
-        console.log(elThird)
         if (window.matchMedia("(min-width: 768px) and (max-width: 1125px)").matches) {
             btn.textContent = "Показать все";
-            elFirst.forEach( el => {
+            for (let i = 0; i < elFirst.length; i++) {
+                const el = elFirst[i];
                 if (el.classList.contains('appliences__swiper-slide_none')) {
                     btn.textContent = "Скрыть";
                     el.classList.remove('appliences__swiper-slide_none');
                     appliences.classList.remove('appliences');
                     appliences.classList.add('appliences_bigger');
-                    blueArrows.classList.add('show-less-btn');
-                    blueArrows.classList.remove('show-all-btn');
+                    blueArrows.forEach(arrow => arrow.classList.add('show-less-btn'));
+                    blueArrows.forEach(arrow => arrow.classList.remove('show-all-btn'));
                 } else {
                     el.classList.add('appliences__swiper-slide_none');
                     appliences.classList.add('appliences');
                     appliences.classList.remove('appliences_bigger');
-                    blueArrows.classList.remove('show-less-btn');
-                    blueArrows.classList.add('show-all-btn');
+                    blueArrows.forEach(arrow => arrow.classList.remove('show-less-btn'));
+                    blueArrows.forEach(arrow => arrow.classList.add('show-all-btn'));
                 } 
-            });
+            }
         } else if (window.matchMedia("(min-width: 1126px)").matches) {
             btn.textContent = "Показать все";
-            elSecond.forEach( el => {
+            for (let i = 0; i < elSecond.length; i++) {
+                const el = elSecond[i];
                 if (el.classList.contains('appliences__swiper-slide_none')) {
                     btn.textContent = "Скрыть";
                     el.classList.remove('appliences__swiper-slide_none');
                     appliences.classList.remove('appliences');
                     appliences.classList.add('appliences_bigger');
-                    blueArrows.classList.add('show-less-btn');
-                    blueArrows.classList.remove('show-all-btn');
+                    blueArrows.forEach(arrow => arrow.classList.add('show-less-btn'));
+                    blueArrows.forEach(arrow => arrow.classList.remove('show-all-btn'));
                 } else {
                     el.classList.add('appliences__swiper-slide_none');
                     appliences.classList.add('appliences');
                     appliences.classList.remove('appliences_bigger');
-                    blueArrows.classList.remove('show-less-btn');
-                    blueArrows.classList.add('show-all-btn');
+                    blueArrows.forEach(arrow => arrow.classList.remove('show-less-btn'));
+                    blueArrows.forEach(arrow => arrow.classList.add('show-all-btn'));
                 } 
-            });
+            }
         }
     });
 });

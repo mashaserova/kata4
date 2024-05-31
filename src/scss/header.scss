@@ -1,0 +1,115 @@
+/* ---------------HEADER------------ */
+/* ---------------HEADER------------ */
+@import 'general';
+.header-inner {
+    display: flex;
+    background-color: white;
+    height: 88px;
+
+    @media (min-width: 768px) {
+        background-color: white;
+        max-width: 1110px;
+    }
+    @media (min-width: 1120px) {
+        display: none;
+    }
+}
+.header-inner__container {
+    margin: 0 -16px;
+    padding: 0 16px;
+    width: 100vw;
+
+    .header-inner__burger {
+        width: 40px;
+        height: 40px;
+        margin: 24px auto;
+        background: url("../images/burger.svg") no-repeat;
+        @media (min-width: 768px) {
+            position: relative;
+
+            &::after {
+                content: " ";
+                position: absolute;
+                background: $whisper;
+                width: 2px;
+                height: 32px;
+                left: 10vw;
+                top: 1vh;
+            }
+        }
+    }
+    
+    .header-inner__logo {
+        display: inline-block;
+        position: relative;
+        width: 97px;
+        height: 51px;
+        background: url("../images/cps-logo.svg") no-repeat;
+        margin: 18px auto;
+        &::after {
+            @media (min-width: 768px) {
+                display: none;
+            }
+        }
+    }
+    
+    .header-inner__tools {
+        width: 40px;
+        height: 40px;
+        background: url("../images/tools.svg") no-repeat;
+        margin: 24px auto;
+    }
+    
+    .header-inner__search {
+        width: 40px;
+        height: 40px;
+        background: url("../images/search.svg") no-repeat;
+        margin: 24px auto;
+    }
+    
+    .header-inner__text {
+        display: none;
+        @media (min-width: 1120px) {
+            display: block;
+            position: relative;
+            width: 160px;
+            padding-left: 24px;
+            background-color: $whiteSmoke;
+            color: black;
+            height: 24px;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+        }
+    }
+    .header-inner__tel {
+        display: none;
+        @media (min-width: 768px) {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: auto 20px;
+            background: url("../images/tel.svg") no-repeat;
+        }
+    }
+    .header-inner__chat {
+        display: none;
+        @media (min-width: 768px) {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: auto 20px;
+            background: url("../images/chat.svg") no-repeat;
+        }
+    }
+    .header-inner__profile {
+        display: none;
+        @media (min-width: 768px) {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: auto 20px;
+            background: url("../images/profile.svg") no-repeat; 
+        }
+    }
+}

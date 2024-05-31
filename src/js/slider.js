@@ -1,9 +1,12 @@
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 const allSliders = document.querySelectorAll('.swiper-container');
 let swipers = [];
 
 function initSwipers() {
     allSliders.forEach(container => {
         const swiper = new Swiper(container, {
+            modules: [Navigation, Pagination],
             slidesPerView: 'auto',
             spaceBetween: 30,
             loop: true,

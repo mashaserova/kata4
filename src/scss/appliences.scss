@@ -1,0 +1,109 @@
+/* =================================================================================================================================== */
+/* =================================================================================================================================== */
+/* =================================================================================================================================== */
+/* =================================================================================================================================== */
+/* ------------------------------------------APPLIENCES SWIPER-------------------------------------- */
+/* ------------------------------------------APPLIENCES SWIPER-------------------------------------- */
+/* ---------------------320px--------------------- */
+/* ---------------------320px--------------------- */
+@import 'general';
+.appliences {
+    height: 300px;
+    width: 100vw;
+}
+
+.appliences__title-box {
+    margin: 56px 0px 16px -16px;
+    padding: 16px 0px 16px 16px;
+    background-image: linear-gradient(to right, $whiteSmoke, white);
+}
+
+.appliences-title {
+    display: inline-block;
+    width: 90vw;
+    color: $grey;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.appliences__swiper-wrapper {
+    display: flex;
+    gap: 16px;
+}
+
+.appliences__swiper-slide {
+    position: relative;
+    width: 100vw;
+    height: 72px;
+    background-color: white;
+    border: 1px solid $whisper;
+    border-radius: 5px;
+}
+
+.swiper-slide.appliences__swiper-slide {
+    width: 240px;
+    height: 160px;
+    padding: 16px 8px 120px 16px;
+}
+
+.appliences .appliences__swiper-pagination.swiper-pagination-horizontal {
+    top: 190px;
+    left: 20vw;
+    z-index: 1;
+}
+
+.appliences__swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
+
+.appliences__swiper-pagination-bullet-active {
+    background-color: $grey;
+}
+
+.appliences__swiper-btn {
+    position: absolute;
+    top: 104px;
+    right: 16px;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url("../images/pink-btn.svg");
+}
+
+@media (min-width: 768px) {
+    .appliences__swiper-slide_none {
+        display: none;
+    }
+
+    .appliences {
+        height: 240px;
+    }
+
+    .appliences_bigger {
+    height: 600px;
+    }
+
+    .appliences__swiper-wrapper {
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    }
+
+    .swiper-slide.appliences__swiper-slide {
+    width: 30vw;
+    }
+}
+
+@media (min-width: 1110px) {
+    .appliences__swiper-wrapper {
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px;
+    }
+
+    .swiper-slide.appliences__swiper-slide {
+    width: 240px;
+    }
+}

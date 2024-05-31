@@ -9,6 +9,7 @@ $whisper: #EAEAEA;
 $grey: #7E7E82;
 $water: #B8FFEC;
 $pink: #FF3E79;
+@import url("../../node_modules/swiper/swiper-bundle.css");
 /* ---------------GLOBAL------------ */
 /* ---------------GLOBAL------------ */
 
@@ -20,7 +21,6 @@ $pink: #FF3E79;
     font-family: TT Lakes, sans-serif;
     background-color: $whiteSmoke;
     color: $darkBlue;
-    width: 100vw;
 }
 
 .container {
@@ -114,6 +114,9 @@ $pink: #FF3E79;
 .heading-box {
     display: flex;
 }
+.heading-box__title {
+    margin-top: 24px;
+}
 
 .heading-box__tools, .heading-box__search {
     display: none;
@@ -126,10 +129,7 @@ $pink: #FF3E79;
     max-width: 700px;
     height: 64px;
     padding-top: 24px;
-
-    &::-webkit-scrollbar {
-    display: none;
-    }
+    scrollbar-width: none;
 }
 
 .service-list__item {
@@ -166,7 +166,7 @@ $pink: #FF3E79;
     padding-top: 24px;
 }
 
-.about-us__paragraph--second {
+.about-us__paragraph_second {
     display: none;
 }
 
@@ -174,6 +174,7 @@ $pink: #FF3E79;
     display: block;
     position: relative;
     width: 160px;
+    margin-top: 16px;
     padding-left: 24px;
     background-color: $whiteSmoke;
     color: black;
@@ -194,12 +195,16 @@ $pink: #FF3E79;
 }
 
 .about-us__photo {
-    width: 320px;
+    max-width: 320px;
     height: 176px;
     margin-top: 16px;
-    margin-left: -8px;
+    margin-left: -16px;
 }
-
+@media (min-width: 380px) {
+    .about-us__photo {
+        margin-left: 0px;
+    }
+}
 /* ------------------------------------------MEDIA-------------------------------------- */
 /* ------------------------------------------MEDIA-------------------------------------- */
 /* ------------------------------------------768-------------------------------------- */
@@ -274,8 +279,9 @@ $pink: #FF3E79;
     max-width: 1110px;
     }
 
-    .about-us__paragraph--second {
-    display: block;
+    .about-us__paragraph_second {
+        display: block;
+        margin-top: 24px;
     }
 
     .about-us__span {
@@ -303,7 +309,7 @@ $pink: #FF3E79;
         max-width: 320px;
         height: 208px;
         margin-top: 15px;
-        margin-left: 15vw;
+        margin-left: 20vw;
         border-radius: 5px;
     }
 }
@@ -313,7 +319,7 @@ $pink: #FF3E79;
 /* ------------------------------------------1120-------------------------------------- */
 @media (min-width: 1120px) {
     .container {
-    max-width: 955px;
+        width: 1040px;
     }
 
     /* ------------------------- */
@@ -387,7 +393,9 @@ $pink: #FF3E79;
         left: 130px;
     }
     }
-
+    .heading-box__title {
+        margin-top: 0px;
+    }
     .service-list {
     max-width: 1063px;
     height: 82px;
@@ -406,7 +414,7 @@ $pink: #FF3E79;
     margin-bottom: 30px;
     }
 
-    .about-us__paragraph--second span {
+    .about-us__paragraph_second .about-us__span {
     display: inline;
     }
 
@@ -428,12 +436,14 @@ $pink: #FF3E79;
 /* ---------------------320px--------------------- */
 
 .repair__title-box {
-    margin: 32px 0px 16px -16px;
+    margin: 24px 0px 16px -16px;
     padding: 16px;
     background-image: linear-gradient(to right, $whiteSmoke, white);
 }
 
 .repair-title {
+    display: inline-block;
+    width: 90vw;
     color: $grey;
     line-height: 24px;
     letter-spacing: -0.2px;
@@ -605,12 +615,16 @@ $pink: #FF3E79;
 /* ---------------------1120px--------------------- */
 /* ---------------------1120px--------------------- */
 @media (min-width: 1120px) {
+    .repair__title-box {
+        margin-top: 50px;
+    }
     .title {
-    margin-right: 140px;
+        margin-right: 0px;
+        padding-right: 414px;
     }
 
     .about-us__photo {
-    margin-left: 185px;
+        margin-left: 185px;
     }
 
     .swiper-pagination {
@@ -695,12 +709,14 @@ $pink: #FF3E79;
 }
 
 .appliences__title-box {
-    margin: 32px 0px 16px -16px;
+    margin: 56px 0px 16px -16px;
     padding: 16px 0px 16px 16px;
     background-image: linear-gradient(to right, $whiteSmoke, white);
 }
 
 .appliences-title {
+    display: inline-block;
+    width: 90vw;
     color: $grey;
     line-height: 24px;
     letter-spacing: -0.2px;
@@ -756,11 +772,11 @@ $pink: #FF3E79;
 
 @media (min-width: 768px) {
     .appliences__swiper-slide_none {
-    display: none;
+        display: none;
     }
 
     .appliences {
-    height: 240px;
+        height: 240px;
     }
 
     .appliences_bigger {
@@ -796,11 +812,8 @@ $pink: #FF3E79;
 /* ------------------------------------------PRICES-------------------------------------- */
 /* ---------------------320px--------------------- */
 /* ---------------------320px--------------------- */
-.prices {
-    height: 568px;
-}
 .prices .swiper-container {
-    height: 350px;
+    height: 220px;
 }
 .prices__title-box {
     margin: 32px 0px 16px -16px;
@@ -809,6 +822,8 @@ $pink: #FF3E79;
 }
 
 .prices-title {
+    display: inline-block;
+    width: 90vw;
     color: $grey;
     line-height: 24px;
     letter-spacing: -0.2px;
@@ -867,7 +882,7 @@ $pink: #FF3E79;
 }
 .prices__description {
     display: inline-block;
-    width: 490px;
+    width: 90vw;
     line-height: 20px;
     letter-spacing: 0.2px;
     padding: 32px 0 16px 0;
@@ -910,6 +925,8 @@ $pink: #FF3E79;
 }
 .commercial-btn {
     display: block;
+    width: 90vw;
+    text-align: left;
     position: relative;
     text-decoration: none;
     font-size: 16px;
@@ -918,25 +935,31 @@ $pink: #FF3E79;
 }
 
 .commercial-btn::after {
+    display: inline-block;
     content: "";
     width: 24px;
     height: 24px;
-    position: absolute;
-    top: 7px;
-    left: 305px; 
     background-image:  url('../images/pink-dropdown.svg');
     background-repeat: no-repeat;
+    background-position: 7px 14px;
 }
 @media (min-width: 769px) {
+    .prices__description {
+        width: 500px;
+        padding-top: 50px;
+    }
+    .prices .swiper-container {
+        height: 340px;
+    }
     .prices__swiper-container {
         display: flex;
         flex-direction: column;
         width: auto;
-        height: 400px;
     }
     .prices__swiper-container .prices__table-header {
         display: flex;
         flex-direction: row;
+        width: 88vw;
     }
     .prices__swiper-container .swiper-wrapper {
         display: flex;
@@ -946,9 +969,10 @@ $pink: #FF3E79;
         margin-bottom: 10px;
     }
     .prices__swiper-container .swiper-slide {
+        font-size: 14px;
         display: flex;
         flex-direction: row;
-        width: 93%;
+        width: 90vw;
         height: 64px;
         text-align: start;
         border: none;
@@ -956,33 +980,37 @@ $pink: #FF3E79;
     }
     
     .prices__first-column {
-        width: 40%; 
+        width: 71vw;
     }
     .prices__second-column {
-        width: 20%;
+        width: 18vw;
     }
     .prices__third-column {
-        width: 20%;
+        width: 40vw;
     }
     .prices__table-header {
-        display: table-header-group;
+        display: flex;
         text-align: left;
+        gap: 16px;
         padding-left: 16px;
         margin-bottom: 10px;
         margin-top: 20px; 
     }
     .prices__swiper-btn {
-        left: 75vw;
-        bottom: 16px;
+        left: 73vw;
+        bottom: 22px;
     }
 }
 @media (min-width: 1110px) {
     .prices__swiper-container .swiper-slide {
-        width: 75%;
+        width: 1010px;
+    }
+    .prices__swiper-container .prices__table-header {
+        width: 1010px;
     }
     .prices__swiper-btn {
-        left: 58vw;
-        bottom: 16px;
+        left: 850px;
+        bottom: 22px;
     }
 }
 
@@ -995,10 +1023,15 @@ $pink: #FF3E79;
 /* ------------------------------------------FOOTER-------------------------------------- */
 /* ---------------------320px--------------------- */
 /* ---------------------320px--------------------- */
+.footer__info {
+    margin-top: 24px;
+}
 
 .footer__info-item {
+    font-size: 14px;
+    line-height: 16px;
     display: block;
-    margin: 0 auto;
+    width: 90vw;
     color: $grey;
     background-color: $whiteSmoke;
     text-align: center;
@@ -1007,14 +1040,19 @@ $pink: #FF3E79;
 
 @media (min-width: 768px) {
     .footer__info {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
+        display: flex;
+        flex-direction: row;
     }
 
     .footer__info-item {
-    margin: 0;
-    text-align: center;
+        margin: 0;
+        width: 30vw;
+    }
+}
+@media (min-width: 1100px) {
+    .footer__info-item {
+        margin: 0;
+        width: 330px;
     }
 }
 
@@ -1048,13 +1086,14 @@ $pink: #FF3E79;
     line-height: 40px;
     letter-spacing: -0.6px;
     margin: 0;
+    padding-bottom: 24px;
 }
 
 .modal-feedback__container {
     position: relative;
     width: 288px;
     height: 1024px;
-    padding: 24px 16px;
+    padding: 104px 16px;
 }
 
 .modal__input {
@@ -1118,17 +1157,17 @@ $pink: #FF3E79;
 /* ---------------------TABLET&DESCTOP--------------------- */
 @media (min-width: 768px) {
     .title__highlight::after {
-    left: -16px;
+        left: -32px;
     }
 
     .modal-feedback__container {
-    width: 440px;
-    padding: 24px 32px;
+        width: 440px;
+        padding: 24px 32px;
     }
 
     .modal__input {
-    font-size: 16px;
-    padding: 12px 183px 12px 16px;
+        font-size: 16px;
+        padding: 12px 183px 12px 16px;
     }
 
     .modal-feedback__info {
@@ -1136,9 +1175,9 @@ $pink: #FF3E79;
     }
 
     .submit-btn {
-    top: 497px;
-    left: 285px;
-    bottom: 0px;
+        top: 497px;
+        left: 285px;
+        bottom: 0px;
     }
 }
 
@@ -1157,7 +1196,7 @@ $pink: #FF3E79;
 
 .close-btn {
     position: absolute;
-    left: -65px;
+    top: 24px;
     width: 40px;
     height: 40px;
     background: url('../images/pink-close-btn.svg');
@@ -1166,7 +1205,7 @@ $pink: #FF3E79;
 .modal-tel__container {
     width: 288px;
     height: 1024px;
-    padding: 24px 16px;
+    padding: 104px 16px;
 }
 
 .modal-tel .modal__input {
@@ -1184,10 +1223,10 @@ $pink: #FF3E79;
     font-size: 14px;
 }
 
-.modal-tel .submit-btn:last-of-type {
+.modal-tel .submit-btn {
     position: absolute;
-    top: 500px;
-    left: 140px;
+    top: 300px;
+    right: 0px;
     bottom: 0px;
     content: "";
     width: 118px;
@@ -1204,8 +1243,8 @@ $pink: #FF3E79;
 /* ---------------------TABLET&DESCTOP--------------------- */
 /* ---------------------TABLET&DESCTOP--------------------- */
 @media (min-width: 768px) {
-    .modal-tel .title__highlight {
-    margin-left: -16px;
+    .modal-tel .title__highlight::after {
+        margin-left: 0px;
     }
 
     .modal-tel__container {
@@ -1223,9 +1262,12 @@ $pink: #FF3E79;
     }
 
     .modal-tel .submit-btn {
-    top: 500px;
-    left: 288px;
-    bottom: 0px;
+        top: 190px;
+        right: 0px;
+        bottom: 0px;
+    }
+    .close-btn {
+        left: -65px;
     }
 }
 

@@ -1,0 +1,46 @@
+/* ------------------------------------------320px-------------------------------------- */
+/* ------------------------------------------320px-------------------------------------- */
+/* ---------------COLORS------------ */
+/* ---------------COLORS------------ */
+$whiteSmoke: #F8F8F8;
+$darkBlue: #1B1C21;
+$lightBlue: #41F6D7;
+$whisper: #EAEAEA;
+$grey: #7E7E82;
+$water: #B8FFEC;
+$pink: #FF3E79;
+@import url("../../node_modules/swiper/swiper-bundle.css");
+/* ---------------GLOBAL------------ */
+/* ---------------GLOBAL------------ */
+
+.content {
+    font-family: TT Lakes, sans-serif;
+    background-color: $whiteSmoke;
+    color: $darkBlue;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 760px;
+        @media (min-width: 768px) {
+            max-width: 1110px;
+        }
+        @media (min-width: 1120px) {
+            width: 1040px;
+        }
+    }
+    .content__container {
+        z-index: 0;
+        position: relative;
+        padding: 0 16px;
+        margin: 0 auto;
+        .site-body {
+            display: flex;
+        }
+        @media (min-width: 768px) {
+            max-width: 1110px;
+            margin: 0 auto;
+        }
+    }
+}
+
