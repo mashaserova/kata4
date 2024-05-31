@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>CPS</title>
 <link href="style.css" rel="stylesheet"></head>
 <body>
@@ -20,23 +19,23 @@
                         <div class="main-menu__body">
                             <nav class="nav-list">
                                 <ul>
-                                    <li class="nav-list__item"><button class="nav-list__item-anchor">Ремонт техники</button></li>
-                                    <li class="nav-list__item"><button class="nav-list__item-anchor">Услуги и сервисы</button></li>
-                                    <li class="nav-list__item"><button class="nav-list__item-anchor">Корпоративным клиентам</button></li>
-                                    <li class="nav-list__item"><button class="nav-list__item-anchor">Продавцам техники</button></li>
-                                    <li class="nav-list__item"><button class="nav-list__item-anchor">Партнерам</button></li>
-                                    <li class="nav-list__item"><button class="nav-list__item-anchor">Производителям</button></li>
-                                    <li class="nav-list__item"><button class="nav-list__item-anchor">Наши сервисные центры</button></li>
-                                    <li class="nav-list__item"><button class="nav-list__item-anchor">Контакты</button></li>
+                                    <li class="nav-list__item"><button class="nav-list__item-btn">Ремонт техники</button></li>
+                                    <li class="nav-list__item"><button class="nav-list__item-btn">Услуги и сервисы</button></li>
+                                    <li class="nav-list__item"><button class="nav-list__item-btn">Корпоративным клиентам</button></li>
+                                    <li class="nav-list__item"><button class="nav-list__item-btn">Продавцам техники</button></li>
+                                    <li class="nav-list__item"><button class="nav-list__item-btn">Партнерам</button></li>
+                                    <li class="nav-list__item"><button class="nav-list__item-btn">Производителям</button></li>
+                                    <li class="nav-list__item"><button class="nav-list__item-btn">Наши сервисные центры</button></li>
+                                    <li class="nav-list__item"><button class="nav-list__item-btn">Контакты</button></li>
                                 </ul>
                             </nav>
                         </div>
                         <footer class="main-menu__footer">
-                            <ul class="contacts-btns">
-                                <li class="contacts-btns__tel"><button></button></li>
-                                <li class="contacts-btns__chat"><button></button></li>
-                                <li class="contacts-btns__profile"><button></button></li>
-                            </ul>
+                            <div class="contacts-btns">
+                                <button class="contacts-btns__tel"></button>
+                                <button class="contacts-btns__chat"></button>
+                                <button class="contacts-btns__profile"></button>
+                            </div>
                             <ul class="contacts-list">
                                 <li class="contacts-list__email">mail@cps.com</li>
                                 <li class="contacts-list__number">8 800 890 8900</li>
@@ -73,7 +72,7 @@
                     </header>
                     <main>
                         <div class="heading-box">
-                            <h1 class="title">
+                            <h1 class="title heading-box__title">
                                 <div class="title__highlight"></div>
                                 Услуги и сервисы
                             </h1>
@@ -111,7 +110,7 @@
                                     Читать далее
                                 </button>
                             </div>
-                            <img class="about-us__photo" src="static/cps-photo.jpg" alt="Фотография с логотипом компании CPS">
+                            <img class="about-us__photo" src="../src/images/cps-photo.jpg" alt="Фотография с логотипом компании CPS">
                         </div>
                         <section class="repair">
                             <div class="repair__title-box">
@@ -119,17 +118,17 @@
                             </div>
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide repair__swiper-slide"><img class="swiper-logo logo-lenovo" src="static/lenovo.svg" alt="Логотип Lenovo"><button class="repair__swiper-btn"></button></div>
-                                    <div class="swiper-slide repair__swiper-slide"><img class="swiper-logo logo-samsung" src="static/samsung.svg" alt="Логотип Samsung"><button class="repair__swiper-btn"></button></div>
-                                    <div class="swiper-slide repair__swiper-slide"><img class="swiper-logo logo-apple" src="static/apple.svg" alt="Логотип Apple"><button class="repair__swiper-btn"></button></div>
-                                    <div class="swiper-slide repair__swiper-slide"><img class="swiper-logo logo-view" src="static/viewSonic.svg" alt="Логотип ViewSonic"><button class="repair__swiper-btn"></button></div>
-                                    <div class="swiper-slide repair__swiper-slide"><img class="swiper-logo logo-bosch" src="static/bosch.svg" alt="Логотип Bosch"><button class="repair__swiper-btn"></button></div>
-                                    <div class="swiper-slide repair__swiper-slide"><img class="swiper-logo logo-hp" src="static/hp.svg" alt="Логотип HP"><button class="repair__swiper-btn"></button></div>
-                                    <div class="swiper-slide swiper-slide_none repair__swiper-slide repair__swiper-slide_none"><img class="swiper-logo logo-acer" src="static/acer.svg" alt="Логотип Acer"><button class="repair__swiper-btn"></button></div>
-                                    <div class="swiper-slide swiper-slide_none repair__swiper-slide repair__swiper-slide_none"><img class="swiper-logo logo-sony" src="static/sony.svg" alt="Логотип Sony"><button class="repair__swiper-btn"></button></div>
-                                    <div class="swiper-slide swiper-slide_none repair__swiper-slide repair__swiper-slide_none"><img class="swiper-logo logo-lenovo" src="static/lenovo.svg" alt="Логотип Lenovo"><button class="repair__swiper-btn"></button></div>
-                                    <div class="swiper-slide swiper-slide_none repair__swiper-slide repair__swiper-slide_none"><img class="swiper-logo logo-samsung" src="static/samsung.svg" alt="Логотип Samsung"><button class="repair__swiper-btn"></button></div>
-                                    <div class="swiper-slide swiper-slide_none repair__swiper-slide repair__swiper-slide_none"><img class="swiper-logo logo-apple" src="static/apple.svg" alt="Логотип Apple"><button class="repair__swiper-btn"></button></div>
+                                    <div class="swiper-slide repair__swiper-slide"><img class="swiper-logo logo-lenovo" src="../src/images/lenovo.svg" alt="Логотип Lenovo"><button class="repair__swiper-btn"></button></div>
+                                    <div class="swiper-slide repair__swiper-slide"><img class="swiper-logo logo-samsung" src="../src/images/samsung.svg" alt="Логотип Samsung"><button class="repair__swiper-btn"></button></div>
+                                    <div class="swiper-slide repair__swiper-slide"><img class="swiper-logo logo-apple" src="../src/images/apple.svg" alt="Логотип Apple"><button class="repair__swiper-btn"></button></div>
+                                    <div class="swiper-slide repair__swiper-slide"><img class="swiper-logo logo-view" src="../src/images/viewSonic.svg" alt="Логотип ViewSonic"><button class="repair__swiper-btn"></button></div>
+                                    <div class="swiper-slide repair__swiper-slide"><img class="swiper-logo logo-bosch" src="../src/images/bosch.svg" alt="Логотип Bosch"><button class="repair__swiper-btn"></button></div>
+                                    <div class="swiper-slide repair__swiper-slide"><img class="swiper-logo logo-hp" src="../src/images/hp.svg" alt="Логотип HP"><button class="repair__swiper-btn"></button></div>
+                                    <div class="swiper-slide swiper-slide_none repair__swiper-slide repair__swiper-slide_none"><img class="swiper-logo logo-acer" src="../src/images/acer.svg" alt="Логотип Acer"><button class="repair__swiper-btn"></button></div>
+                                    <div class="swiper-slide swiper-slide_none repair__swiper-slide repair__swiper-slide_none"><img class="swiper-logo logo-sony" src="../src/images/sony.svg" alt="Логотип Sony"><button class="repair__swiper-btn"></button></div>
+                                    <div class="swiper-slide swiper-slide_none repair__swiper-slide repair__swiper-slide_none"><img class="swiper-logo logo-lenovo" src="../src/images/lenovo.svg" alt="Логотип Lenovo"><button class="repair__swiper-btn"></button></div>
+                                    <div class="swiper-slide swiper-slide_none repair__swiper-slide repair__swiper-slide_none"><img class="swiper-logo logo-samsung" src="../src/images/samsung.svg" alt="Логотип Samsung"><button class="repair__swiper-btn"></button></div>
+                                    <div class="swiper-slide swiper-slide_none repair__swiper-slide repair__swiper-slide_none"><img class="swiper-logo logo-apple" src="../src/images/apple.svg" alt="Логотип Apple"><button class="repair__swiper-btn"></button></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
@@ -173,27 +172,27 @@
                                         <div class="prices__fourth-column"><button class="prices__swiper-btn">Заказать</button></div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="prices__first-column">Диагностика</div>
-                                        <div class="prices__second-column">Бесплатно</div>
-                                        <div class="prices__third-column">30 мин</div>
+                                        <div class="prices__first-column">Замена дисплея</div>
+                                        <div class="prices__second-column">1 000 ₽</div>
+                                        <div class="prices__third-column">30-120 мин</div>
                                         <div class="prices__fourth-column"><button class="prices__swiper-btn">Заказать</button></div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="prices__first-column">Диагностика</div>
-                                        <div class="prices__second-column">Бесплатно</div>
-                                        <div class="prices__third-column">30 мин</div>
+                                        <div class="prices__first-column">Замена полифонического динамика</div>
+                                        <div class="prices__second-column">1 000 ₽</div>
+                                        <div class="prices__third-column">30-120 мин</div>
                                         <div class="prices__fourth-column"><button class="prices__swiper-btn">Заказать</button></div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="prices__first-column">Диагностика</div>
-                                        <div class="prices__second-column">Бесплатно</div>
-                                        <div class="prices__third-column">30 мин</div>
+                                        <div class="prices__first-column">Тестирование с выдачей технического заключения</div>
+                                        <div class="prices__second-column">1 000 ₽</div>
+                                        <div class="prices__third-column">30-120 мин</div>
                                         <div class="prices__fourth-column"><button class="prices__swiper-btn">Заказать</button></div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="prices__first-column">Диагностика</div>
-                                        <div class="prices__second-column">Бесплатно</div>
-                                        <div class="prices__third-column">30 мин</div>
+                                        <div class="prices__first-column">Замена программного обеспечения</div>
+                                        <div class="prices__second-column">1 000 ₽</div>
+                                        <div class="prices__third-column">30-120 мин</div>
                                         <div class="prices__fourth-column"><button class="prices__swiper-btn">Заказать</button></div>
                                     </div>
                                 </div>
@@ -216,20 +215,20 @@
                 </div>
                 <div class="modal modal-feedback modal-feedback_closed">
                     <div class="modal-feedback__container">
-                        <button class="close-btn"></button>
+                        <button class="close-btn modal-feedback__close-btn"></button>
                         <form action="#" method="get" class="feedback-form">
-                            <label class="title-modal">
+                            <div class="title-modal">
                                 <div class="title__highlight"></div>
                                 Обратная связь
-                            </label>
+                            </div>
                             <label for="username" class="modal__label">
                                 <input class="modal__input modal__input_first modal__username" required type="text" id="username" name="username" value="" placeholder="Имя">
                             </label>
                             <label for="phone" class="modal__label">
-                                <input class="modal__input modal__phone" required type="tel" id="phone" name="phone" value="" placeholder="+31636363634">
+                                <input class="modal__input modal__phone" required pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" title="+7 (999) 999-99-99" type="tel" id="phone" name="phone" value="" placeholder="Телефон">
                             </label>
                             <label for="useremail" class="modal__label">
-                                <input class="modal__input modal__useremail" required type="email" id="useremail" name="useremail" value="" placeholder="Электронная почта">
+                                <input class="modal__input modal__useremail" required pattern=".+\..{2,}" title="Требуется доменное расширение адреса, например, .com" type="email" id="useremail" name="useremail" value="" placeholder="Электронная почта">
                             </label>
                             <label for="userfeedback" class="modal__label">
                                 <input class="modal__input modal__input_last modal__userfeedback" required type="text" id="userfeedback" name="userfeedback" value="" placeholder="Сообщение">
@@ -246,14 +245,14 @@
                 </div>
                 <div class="modal modal-tel modal-tel_closed">
                     <div class="modal-tel__container">
-                        <button class="close-btn"></button>
+                        <button class="close-btn modal-tel__close-btn"></button>
                         <form action="#" class="tel-form">
-                            <label class="title-modal" for="usertel">
+                            <div class="title-modal" for="usertel">
                                 <div class="title__highlight"></div>
                                 Заказать звонок
-                            </label>
+                            </div>
                             <label for="usertel">
-                                <input class="modal__input" required id="usertel" type="tel" id="usertel" name="usertel" value="" placeholder="Телефон">
+                                <input class="modal__input" id="usertel" type="tel" required pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" title="+7 (999) 999-99-99" id="usertel" name="usertel" value="" placeholder="Телефон">
                             </label>
                             <button class="submit-btn submit-tel" type="submit">Отправить</button>
                         </form>
@@ -266,6 +265,5 @@
             </div>
         </div>
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
