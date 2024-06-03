@@ -925,7 +925,7 @@ button.swiper-pagination-bullet {
         content: " ";
         width: 40px;
         height: 40px;
-        background: url(./static/tools.svg) no-repeat;
+        background: url(./src/tools.svg) no-repeat;
         top: 4px;
         left: 130px; } }
 
@@ -949,7 +949,7 @@ button.swiper-pagination-bullet {
         content: " ";
         width: 40px;
         height: 40px;
-        background: url(./static/search.svg) no-repeat;
+        background: url(./src/search.svg) no-repeat;
         top: 4px;
         left: 130px; } }
 
@@ -1041,7 +1041,7 @@ button.swiper-pagination-bullet {
       width: 24px;
       height: 24px;
       left: 0px;
-      background: url(./static/blue-arrows.svg) no-repeat; }
+      background: url(./src/blue-arrows.svg) no-repeat; }
   .about-us .about-us__photo {
     max-width: 320px;
     height: 176px;
@@ -1131,7 +1131,7 @@ button.swiper-pagination-bullet {
     width: 40px;
     height: 40px;
     margin: 24px auto;
-    background: url(./static/burger.svg) no-repeat; }
+    background: url(./src/burger.svg) no-repeat; }
     @media (min-width: 768px) {
       .header-inner__container .header-inner__burger {
         position: relative; }
@@ -1148,7 +1148,7 @@ button.swiper-pagination-bullet {
     position: relative;
     width: 97px;
     height: 51px;
-    background: url(./static/cps-logo.svg) no-repeat;
+    background: url(./src/cps-logo.svg) no-repeat;
     margin: 18px auto; }
     @media (min-width: 768px) {
       .header-inner__container .header-inner__logo::after {
@@ -1156,12 +1156,12 @@ button.swiper-pagination-bullet {
   .header-inner__container .header-inner__tools {
     width: 40px;
     height: 40px;
-    background: url(./static/tools.svg) no-repeat;
+    background: url(./src/tools.svg) no-repeat;
     margin: 24px auto; }
   .header-inner__container .header-inner__search {
     width: 40px;
     height: 40px;
-    background: url(./static/search.svg) no-repeat;
+    background: url(./src/search.svg) no-repeat;
     margin: 24px auto; }
   .header-inner__container .header-inner__text {
     display: none; }
@@ -1185,7 +1185,7 @@ button.swiper-pagination-bullet {
         width: 40px;
         height: 40px;
         margin: auto 20px;
-        background: url(./static/tel.svg) no-repeat; } }
+        background: url(./src/tel.svg) no-repeat; } }
   .header-inner__container .header-inner__chat {
     display: none; }
     @media (min-width: 768px) {
@@ -1194,7 +1194,7 @@ button.swiper-pagination-bullet {
         width: 40px;
         height: 40px;
         margin: auto 20px;
-        background: url(./static/chat.svg) no-repeat; } }
+        background: url(./src/chat.svg) no-repeat; } }
   .header-inner__container .header-inner__profile {
     display: none; }
     @media (min-width: 768px) {
@@ -1203,7 +1203,7 @@ button.swiper-pagination-bullet {
         width: 40px;
         height: 40px;
         margin: auto 20px;
-        background: url(./static/profile.svg) no-repeat; } }
+        background: url(./src/profile.svg) no-repeat; } }
 
 /* =================================================================================================================================== */
 /* =================================================================================================================================== */
@@ -1390,7 +1390,7 @@ button.swiper-pagination-bullet {
         top: 12px;
         bottom: 0px;
         left: 97px;
-        background: url(./static/dropdown.svg) no-repeat; }
+        background: url(./src/dropdown.svg) no-repeat; }
     @media (min-width: 768px) {
       .modal .modal-feedback__container {
         width: 440px;
@@ -1444,7 +1444,7 @@ button.swiper-pagination-bullet {
   top: 24px;
   width: 40px;
   height: 40px;
-  background: url(./static/pink-close-btn.svg); }
+  background: url(./src/pink-close-btn.svg); }
   @media (min-width: 768px) {
     .close-btn {
       left: -65px; } }
@@ -1565,7 +1565,7 @@ button.swiper-pagination-bullet {
         width: 40px;
         height: 40px;
         margin: 3px 16px 0 0;
-        background: url(./static/burger.svg) no-repeat; }
+        background: url(./src/burger.svg) no-repeat; }
         .main-menu .main-menu__container .main-menu__header .main-menu__burger-btn:hover {
           opacity: 0.6;
           transition: 0.2s; }
@@ -1580,7 +1580,7 @@ button.swiper-pagination-bullet {
         width: 40px;
         height: 40px;
         margin-top: 3px;
-        background: url(./static/search.svg) no-repeat; }
+        background: url(./src/search.svg) no-repeat; }
         .main-menu .main-menu__container .main-menu__header .main-menu__search-btn:hover {
           opacity: 0.6;
           transition: 0.2s; }
@@ -1616,7 +1616,7 @@ button.swiper-pagination-bullet {
         margin: 0 16px 0 0;
         width: 40px;
         height: 40px;
-        background: url(./static/tel.svg) no-repeat; }
+        background: url(./src/tel.svg) no-repeat; }
         .main-menu .main-menu__container .contacts-btns .contacts-btns__tel:hover {
           opacity: 0.6;
           transition: 0.2s; }
@@ -1624,14 +1624,14 @@ button.swiper-pagination-bullet {
         width: 40px;
         height: 40px;
         margin-right: 16px;
-        background: url(./static/chat.svg) no-repeat; }
+        background: url(./src/chat.svg) no-repeat; }
         .main-menu .main-menu__container .contacts-btns .contacts-btns__chat:hover {
           opacity: 0.6;
           transition: 0.2s; }
       .main-menu .main-menu__container .contacts-btns .contacts-btns__profile {
         width: 40px;
         height: 40px;
-        background: url(./static/profile.svg) no-repeat;
+        background: url(./src/profile.svg) no-repeat;
         margin-right: 60px; }
         .main-menu .main-menu__container .contacts-btns .contacts-btns__profile:hover {
           opacity: 0.6;
@@ -1758,7 +1758,7 @@ button.swiper-pagination-bullet {
     top: 10px;
     bottom: 5px;
     right: -5px;
-    background: url(./static/dropdown.svg) no-repeat; }
+    background: url(./src/dropdown.svg) no-repeat; }
 
 .prices__description {
   display: inline-block;
@@ -1817,7 +1817,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url(./static/pink-dropdown.svg);
+  background-image: url(./src/pink-dropdown.svg);
   background-repeat: no-repeat;
   background-position: 7px 14px; }
 
@@ -1974,7 +1974,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 40px;
   height: 40px;
-  background: url(./static/pink-btn.svg); }
+  background: url(./src/pink-btn.svg); }
 
 @media (min-width: 768px) {
   .swiper-slide.appliences__swiper-slide_none {
@@ -2093,7 +2093,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 40px;
   height: 40px;
-  background: url(./static/pink-btn.svg); }
+  background: url(./src/pink-btn.svg); }
 
 .swiper-horizontal > .swiper-pagination-bullets {
   top: 88px;
@@ -2146,7 +2146,7 @@ button.swiper-pagination-bullet {
       top: 5px;
       bottom: 5px;
       right: 110px;
-      background: url(./static/blue-arrows_down.svg) 0px 0px no-repeat; }
+      background: url(./src/blue-arrows_down.svg) 0px 0px no-repeat; }
   .show-less-btn {
     display: block;
     position: relative;
@@ -2164,7 +2164,7 @@ button.swiper-pagination-bullet {
       top: 0px;
       bottom: 5px;
       right: 110px;
-      background: url(./static/blue-arrows_down.svg) 0px 0px no-repeat;
+      background: url(./src/blue-arrows_down.svg) 0px 0px no-repeat;
       transform: rotate(180deg); }
   .swiper-slide {
     display: block; }
@@ -2209,7 +2209,7 @@ button.swiper-pagination-bullet {
       top: 5px;
       bottom: 5px;
       right: 110px;
-      background: url(./static/blue-arrows_down.svg) 0px 0px no-repeat; }
+      background: url(./src/blue-arrows_down.svg) 0px 0px no-repeat; }
   .show-less-btn {
     display: block;
     position: relative;
@@ -2227,7 +2227,7 @@ button.swiper-pagination-bullet {
       top: 0px;
       bottom: 5px;
       right: 110px;
-      background: url(./static/blue-arrows_down.svg) 0px 0px no-repeat;
+      background: url(./src/blue-arrows_down.svg) 0px 0px no-repeat;
       transform: rotate(180deg); } }
 
 
