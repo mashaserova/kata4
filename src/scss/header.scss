@@ -10,24 +10,27 @@
         background-color: white;
         max-width: 1110px;
     }
+
     @media (min-width: 1120px) {
         display: none;
     }
-}
-.header-inner__container {
-    margin: 0 -16px;
-    padding: 0 16px;
-    width: 100vw;
 
-    .header-inner__burger {
+    &__container {
+        margin: 0 -16px;
+        padding: 0 16px;
+        width: 100vw;
+    }
+
+    &__burger {
         width: 40px;
         height: 40px;
         margin: 24px auto;
         background: url("../images/burger.svg") no-repeat;
+
         @media (min-width: 768px) {
             position: relative;
-
-            &::after {
+    
+            &:after {
                 content: " ";
                 position: absolute;
                 background: $whisper;
@@ -38,37 +41,39 @@
             }
         }
     }
-    
-    .header-inner__logo {
+
+    &__logo {
         display: inline-block;
         position: relative;
         width: 97px;
         height: 51px;
         background: url("../images/cps-logo.svg") no-repeat;
         margin: 18px auto;
-        &::after {
+        
+        &:after {
             @media (min-width: 768px) {
                 display: none;
             }
         }
     }
     
-    .header-inner__tools {
+    &__tools {
         width: 40px;
         height: 40px;
         background: url("../images/tools.svg") no-repeat;
         margin: 24px auto;
     }
     
-    .header-inner__search {
+    &__search {
         width: 40px;
         height: 40px;
         background: url("../images/search.svg") no-repeat;
         margin: 24px auto;
     }
     
-    .header-inner__text {
+    &__text {
         display: none;
+
         @media (min-width: 1120px) {
             display: block;
             position: relative;
@@ -82,8 +87,10 @@
             letter-spacing: -0.2px;
         }
     }
-    .header-inner__tel {
+
+    &__tel {
         display: none;
+
         @media (min-width: 768px) {
             display: block;
             width: 40px;
@@ -92,8 +99,10 @@
             background: url("../images/tel.svg") no-repeat;
         }
     }
-    .header-inner__chat {
+
+    &__chat {
         display: none;
+
         @media (min-width: 768px) {
             display: block;
             width: 40px;
@@ -102,8 +111,10 @@
             background: url("../images/chat.svg") no-repeat;
         }
     }
-    .header-inner__profile {
+
+    &__profile {
         display: none;
+
         @media (min-width: 768px) {
             display: block;
             width: 40px;

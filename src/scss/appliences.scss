@@ -1,19 +1,65 @@
-/* =================================================================================================================================== */
-/* =================================================================================================================================== */
-/* =================================================================================================================================== */
-/* =================================================================================================================================== */
-/* ------------------------------------------APPLIENCES SWIPER-------------------------------------- */
-/* ------------------------------------------APPLIENCES SWIPER-------------------------------------- */
-/* ---------------------320px--------------------- */
-/* ---------------------320px--------------------- */
 @import 'general';
+
 .appliences {
     height: 300px;
     width: 100vw;
+
+    @media (min-width: 768px) {
+        height: 240px;
+    }
+
+    &__swiper-wrapper {
+        display: flex;
+        gap: 16px;
+    
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 30vw 30vw 30vw;
+        }
+        
+        @media (min-width: 1110px) {
+            display: grid;
+            grid-template-columns: 240px 240px 240px 240px;
+        }
+    }
+
+    &__swiper-slide {
+        position: relative;
+        width: 100vw;
+        height: 72px;
+        background-color: white;
+        border: 1px solid $whisper;
+        border-radius: 5px;
+    }
+
+    &__swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+
+        &--active {
+            background-color: $grey;
+        }
+    }
+
+    &__swiper-btn {
+        position: absolute;
+        top: 104px;
+        right: 16px;
+        content: "";
+        width: 40px;
+        height: 40px;
+        background: url("../images/pink-btn.svg");
+    }
+
+    &--bigger {
+        @media (min-width: 768px) {
+            height: 430px;
+        }
+    }
 }
 
 .appliences__title-box {
-    margin: 56px 0px 16px -16px;
+    margin: 24px 0px 16px -16px;
     padding: 16px 0px 16px 16px;
     background-image: linear-gradient(to right, $whiteSmoke, white);
 }
@@ -29,81 +75,27 @@
     text-transform: uppercase;
 }
 
-.appliences__swiper-wrapper {
-    display: flex;
-    gap: 16px;
-}
-
-.appliences__swiper-slide {
-    position: relative;
-    width: 100vw;
-    height: 72px;
-    background-color: white;
-    border: 1px solid $whisper;
-    border-radius: 5px;
-}
-
 .swiper-slide.appliences__swiper-slide {
     width: 240px;
     height: 160px;
     padding: 16px 8px 120px 16px;
+
+    @media (min-width: 768px) {
+        width: 30vw;
+    }
+    @media (min-width: 1110px) {
+        width: 240px;
+    }
 }
 
-.appliences__swiper-pagination.swiper-pagination-horizontal {
+.swiper-slide.appliences__swiper-slide--none {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.swiper-container .appliences__swiper-pagination.swiper-pagination-horizontal {
     top: 190px;
     left: 20vw;
     z-index: 1;
-}
-
-.appliences__swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-}
-
-.appliences__swiper-pagination-bullet-active {
-    background-color: $grey;
-}
-
-.appliences__swiper-btn {
-    position: absolute;
-    top: 104px;
-    right: 16px;
-    content: "";
-    width: 40px;
-    height: 40px;
-    background: url("../images/pink-btn.svg");
-}
-
-@media (min-width: 768px) {
-    .swiper-slide.appliences__swiper-slide_none {
-        display: none;
-    }
-
-    .appliences {
-        height: 240px;
-    }
-
-    .appliences_bigger {
-        height: 600px;
-    }
-
-    .appliences__swiper-wrapper {
-        display: grid;
-        grid-template-columns: 30vw 30vw 30vw;
-    }
-
-    .swiper-slide.appliences__swiper-slide {
-        width: 30vw;
-    }
-}
-
-@media (min-width: 1110px) {
-    .appliences__swiper-wrapper {
-        display: grid;
-        grid-template-columns: 240px 240px 240px 240px;
-    }
-
-    .swiper-slide.appliences__swiper-slide {
-        width: 240px;
-    }
 }

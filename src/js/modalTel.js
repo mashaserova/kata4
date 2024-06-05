@@ -6,19 +6,19 @@ document.addEventListener("DOMContentLoaded", function() {
     const siteBody = document.querySelector('.site-body');
     
     btnOpenHeader.addEventListener('click', () => {
-        tel.classList.toggle('modal-tel_closed');
+        tel.classList.toggle('modal-tel--closed');
     });
     btnOpenMenu.addEventListener('click', () => {
-        tel.classList.toggle('modal-tel_closed');
+        tel.classList.toggle('modal-tel--closed');
     });
     
     btnClose.addEventListener('click', () => {
-        tel.classList.toggle('modal-tel_closed');
+        tel.classList.toggle('modal-tel--closed');
     });
     
     siteBody.addEventListener('click', (event) => {
         if (!tel.contains(event.target) && event.target !== btnOpenHeader && event.target !== btnOpenMenu) {
-            tel.classList.add('modal-tel_closed');
+            tel.classList.add('modal-tel--closed');
         }
     });
 });

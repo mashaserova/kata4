@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     if (window.matchMedia("(min-width: 1126px)").matches) {
         elThird.forEach(el => {
-            el.classList.remove('appliences__swiper-slide_none');
+            el.classList.remove('appliences__swiper-slide--none');
         })
     }
     btn.addEventListener('click', () => {
@@ -17,17 +17,17 @@ document.addEventListener("DOMContentLoaded", function() {
             btn.textContent = "Показать все";
             for (let i = 0; i < elFirst.length; i++) {
                 const el = elFirst[i];
-                if (el.classList.contains('appliences__swiper-slide_none')) {
+                if (el.classList.contains('appliences__swiper-slide--none')) {
                     btn.textContent = "Скрыть";
-                    el.classList.remove('appliences__swiper-slide_none');
+                    el.classList.remove('appliences__swiper-slide--none');
                     appliences.classList.remove('appliences');
-                    appliences.classList.add('appliences_bigger');
+                    appliences.classList.add('appliences--bigger');
                     blueArrows.forEach(arrow => arrow.classList.add('show-less-btn'));
                     blueArrows.forEach(arrow => arrow.classList.remove('show-all-btn'));
                 } else {
-                    el.classList.add('appliences__swiper-slide_none');
+                    el.classList.add('appliences__swiper-slide--none');
                     appliences.classList.add('appliences');
-                    appliences.classList.remove('appliences_bigger');
+                    appliences.classList.remove('appliences--bigger');
                     blueArrows.forEach(arrow => arrow.classList.remove('show-less-btn'));
                     blueArrows.forEach(arrow => arrow.classList.add('show-all-btn'));
                 } 
@@ -36,17 +36,17 @@ document.addEventListener("DOMContentLoaded", function() {
             btn.textContent = "Показать все";
             for (let i = 0; i < elSecond.length; i++) {
                 const el = elSecond[i];
-                if (el.classList.contains('appliences__swiper-slide_none')) {
+                if (el.classList.contains('appliences__swiper-slide--none')) {
                     btn.textContent = "Скрыть";
-                    el.classList.remove('appliences__swiper-slide_none');
+                    el.classList.remove('appliences__swiper-slide--none');
                     appliences.classList.remove('appliences');
-                    appliences.classList.add('appliences_bigger');
+                    appliences.classList.add('appliences--bigger');
                     blueArrows.forEach(arrow => arrow.classList.add('show-less-btn'));
                     blueArrows.forEach(arrow => arrow.classList.remove('show-all-btn'));
                 } else {
-                    el.classList.add('appliences__swiper-slide_none');
+                    el.classList.add('appliences__swiper-slide--none');
                     appliences.classList.add('appliences');
-                    appliences.classList.remove('appliences_bigger');
+                    appliences.classList.remove('appliences--bigger');
                     blueArrows.forEach(arrow => arrow.classList.remove('show-less-btn'));
                     blueArrows.forEach(arrow => arrow.classList.add('show-all-btn'));
                 } 
